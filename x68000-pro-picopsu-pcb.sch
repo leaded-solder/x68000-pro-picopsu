@@ -54,12 +54,6 @@ Text Label 7925 3675 0    50   ~ 0
 PSU_COM
 Text Label 7925 3575 0    50   ~ 0
 PSU_COM
-Text Label 7925 3975 0    50   ~ 0
-PSU_5V
-Text Label 7925 4075 0    50   ~ 0
-PSU_5V
-Text Label 7925 4175 0    50   ~ 0
-PSU_5V
 Text Label 7075 4075 2    50   ~ 0
 PSU_12V1
 Text Label 7075 4175 2    50   ~ 0
@@ -70,12 +64,8 @@ Text Label 7925 3375 0    50   ~ 0
 PSU_COM
 Text Label 7075 3375 2    50   ~ 0
 PSU_COM
-Text Label 7075 3475 2    50   ~ 0
-PSU_5V
 Text Label 7075 3575 2    50   ~ 0
 PSU_COM
-Text Label 7075 3675 2    50   ~ 0
-PSU_5V
 Text Label 7075 3775 2    50   ~ 0
 PSU_COM
 Text Label 7075 3975 2    50   ~ 0
@@ -183,20 +173,8 @@ Text Label 3900 3850 3    50   ~ 0
 PSU_COM
 Text Label 3800 3850 3    50   ~ 0
 PSU_COM
-Text Label 4400 3200 1    50   ~ 0
-PSU_5V
-Text Label 4300 3200 1    50   ~ 0
-PSU_5V
-Text Label 4200 3200 1    50   ~ 0
-PSU_5V
 Text Label 4000 3200 1    50   ~ 0
-PSU_12V
-Text Label 3900 3200 1    50   ~ 0
-PSU_12V
-Text Label 4100 3200 1    50   ~ 0
-PSU_5V
-Text Label 3800 3200 1    50   ~ 0
-PSU_12V
+PSU_12V1
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 60CEAB5B
@@ -210,8 +188,6 @@ F 3 "~" H 1000 1000 50  0001 C CNN
 $EndComp
 Text Label 1100 1200 3    50   ~ 0
 PSU_COM
-Text Label 1000 1200 3    50   ~ 0
-PSU_12V
 NoConn ~ 900  1200
 Text Notes 1150 1300 0    50   ~ 0
 Tacho is unused
@@ -288,4 +264,30 @@ Text Label 4400 3850 3    50   ~ 0
 POWER_ON_REQUEST
 Text Label 9850 3850 2    50   ~ 0
 POWER_ON_REQUEST
+Text Notes 7600 4950 2    50   ~ 0
+Is it really a problem that I'm tying all these power outputs together? Maybe they should be independent
+Text Label 1000 1200 3    50   ~ 0
+PSU_12V1
+Text Label 4100 3200 1    50   ~ 0
+PSU_5V
+Text Label 4200 3200 1    50   ~ 0
+PSU_5V
+Text Label 4300 3200 1    50   ~ 0
+PSU_5V
+Text Label 4400 3200 1    50   ~ 0
+PSU_5V
+Text Label 7925 4175 0    50   ~ 0
+PSU_5V
+Text Label 7925 4075 0    50   ~ 0
+PSU_5V
+Text Label 7925 3975 0    50   ~ 0
+PSU_5V
+Text Label 7075 3675 2    50   ~ 0
+PSU_5V
+Text Label 7075 3475 2    50   ~ 0
+PSU_5V
+Text Label 3800 3200 1    50   ~ 0
+PSU_12V1
+Text Label 3900 3200 1    50   ~ 0
+PSU_12V1
 $EndSCHEMATC
