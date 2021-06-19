@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ATX_Breakout)(type KiCad)(uri ${KIPRJMOD}/ATX_Breakout.pretty)(options "")(descr ""))
+  (lib (name LegacyFootprints)(type KiCad)(uri ${KIPRJMOD}/LegacyFootprints.pretty)(options "")(descr ""))
+)
