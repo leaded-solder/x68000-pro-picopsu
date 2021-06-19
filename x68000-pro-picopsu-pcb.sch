@@ -264,8 +264,6 @@ Text Label 4400 3850 3    50   ~ 0
 POWER_ON_REQUEST
 Text Label 9850 3850 2    50   ~ 0
 POWER_ON_REQUEST
-Text Notes 7600 4950 2    50   ~ 0
-Is it really a problem that I'm tying all these power outputs together? Maybe they should be independent
 Text Label 1000 1200 3    50   ~ 0
 PSU_12V
 Text Label 4100 3200 1    50   ~ 0
