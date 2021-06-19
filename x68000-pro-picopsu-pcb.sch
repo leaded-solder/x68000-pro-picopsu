@@ -19,7 +19,7 @@ U 1 1 60CD5260
 P 7525 3725
 F 0 "J4" H 7500 4522 60  0000 C CNN
 F 1 "PicoPSU" H 7500 4416 60  0000 C CNN
-F 2 "LegacyFootprints:Molex_MiniFit-JR-5556-20A_2x10x4.20mm_Straight" H 7525 4375 60  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical" H 7525 4375 60  0001 C CNN
 F 3 "" H 7525 4375 60  0000 C CNN
 	1    7525 3725
 	1    0    0    -1  
@@ -35,7 +35,7 @@ U 1 1 60CD675F
 P 6475 3875
 F 0 "TP2" H 6533 3993 50  0000 L CNN
 F 1 "TestPoint" H 6533 3902 50  0000 L CNN
-F 2 "" H 6675 3875 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 6675 3875 50  0001 C CNN
 F 3 "~" H 6675 3875 50  0001 C CNN
 	1    6475 3875
 	1    0    0    -1  
@@ -55,9 +55,9 @@ PSU_COM
 Text Label 7925 3575 0    50   ~ 0
 PSU_COM
 Text Label 7075 4075 2    50   ~ 0
-PSU_12V1
+PSU_12V_5
 Text Label 7075 4175 2    50   ~ 0
-PSU_12V1
+PSU_12V_6
 Text Label 7925 3275 0    50   ~ 0
 PSU_NEG_12V
 Text Label 7925 3375 0    50   ~ 0
@@ -76,7 +76,7 @@ U 1 1 60CD8D70
 P 6025 1375
 F 0 "TP1" H 6083 1493 50  0000 L CNN
 F 1 "TestPoint" H 6083 1402 50  0000 L CNN
-F 2 "" H 6225 1375 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 6225 1375 50  0001 C CNN
 F 3 "~" H 6225 1375 50  0001 C CNN
 	1    6025 1375
 	1    0    0    -1  
@@ -145,7 +145,7 @@ U 1 1 60CD589C
 P 4100 3400
 F 0 "J2" V 3972 3780 50  0000 L CNN
 F 1 "Screw_Terminal_01x07" V 4063 3780 50  0000 L CNN
-F 2 "" H 4100 3400 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-7-5.0-H_1x07_P5.00mm_Horizontal" H 4100 3400 50  0001 C CNN
 F 3 "~" H 4100 3400 50  0001 C CNN
 	1    4100 3400
 	0    1    1    0   
@@ -156,7 +156,7 @@ U 1 1 60CD7E7B
 P 4100 3650
 F 0 "J3" V 4064 3262 50  0000 R CNN
 F 1 "Screw_Terminal_01x07" V 3973 3262 50  0000 R CNN
-F 2 "" H 4100 3650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-7-5.0-H_1x07_P5.00mm_Horizontal" H 4100 3650 50  0001 C CNN
 F 3 "~" H 4100 3650 50  0001 C CNN
 	1    4100 3650
 	0    -1   -1   0   
@@ -174,7 +174,7 @@ PSU_COM
 Text Label 3800 3850 3    50   ~ 0
 PSU_COM
 Text Label 4000 3200 1    50   ~ 0
-PSU_12V1
+PSU_12V_5
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 60CEAB5B
@@ -218,8 +218,8 @@ L Device:C_Small C1
 U 1 1 60CEF939
 P 10525 5250
 F 0 "C1" H 10617 5296 50  0000 L CNN
-F 1 "C_Small" H 10617 5205 50  0000 L CNN
-F 2 "" H 10525 5250 50  0001 C CNN
+F 1 "0.1µF" H 10617 5205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 10525 5250 50  0001 C CNN
 F 3 "~" H 10525 5250 50  0001 C CNN
 	1    10525 5250
 	1    0    0    -1  
@@ -267,13 +267,13 @@ POWER_ON_REQUEST
 Text Notes 7600 4950 2    50   ~ 0
 Is it really a problem that I'm tying all these power outputs together? Maybe they should be independent
 Text Label 1000 1200 3    50   ~ 0
-PSU_12V1
+PSU_12V_6
 Text Label 4100 3200 1    50   ~ 0
-PSU_5V
+PSU_5V_4
 Text Label 4200 3200 1    50   ~ 0
-PSU_5V
+PSU_5V_3
 Text Label 4300 3200 1    50   ~ 0
-PSU_5V
+PSU_5V_2
 Text Label 4400 3200 1    50   ~ 0
 PSU_5V
 Text Label 7925 4175 0    50   ~ 0
@@ -281,13 +281,39 @@ PSU_5V
 Text Label 7925 4075 0    50   ~ 0
 PSU_5V
 Text Label 7925 3975 0    50   ~ 0
-PSU_5V
+PSU_5V_2
 Text Label 7075 3675 2    50   ~ 0
-PSU_5V
+PSU_5V_3
 Text Label 7075 3475 2    50   ~ 0
-PSU_5V
+PSU_5V_4
 Text Label 3800 3200 1    50   ~ 0
-PSU_12V1
+PSU_12V_6
 Text Label 3900 3200 1    50   ~ 0
-PSU_12V1
+PSU_12V_6
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60D056FF
+P 9850 3150
+F 0 "TP3" H 9908 3268 50  0000 L CNN
+F 1 "TestPoint" H 9908 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 10050 3150 50  0001 C CNN
+F 3 "~" H 10050 3150 50  0001 C CNN
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3150 9850 3850
+$Comp
+L Connector:TestPoint CONV_1
+U 1 1 60D10132
+P 3600 1525
+F 0 "CONV_1" H 3658 1643 50  0000 L CNN
+F 1 "AC/DC Converter" H 3658 1552 50  0000 L CNN
+F 2 "OffboardACDC:3x2_4x2" H 3800 1525 50  0001 C CNN
+F 3 "~" H 3800 1525 50  0001 C CNN
+	1    3600 1525
+	1    0    0    -1  
+$EndComp
+Text Label 3600 1525 3    50   ~ 0
+PSU_COM
 $EndSCHEMATC
