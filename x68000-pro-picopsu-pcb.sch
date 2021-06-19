@@ -55,9 +55,9 @@ PSU_COM
 Text Label 7925 3575 0    50   ~ 0
 PSU_COM
 Text Label 7075 4075 2    50   ~ 0
-PSU_12V_5
+PSU_12V
 Text Label 7075 4175 2    50   ~ 0
-PSU_12V_6
+PSU_12V
 Text Label 7925 3275 0    50   ~ 0
 PSU_NEG_12V
 Text Label 7925 3375 0    50   ~ 0
@@ -174,7 +174,7 @@ PSU_COM
 Text Label 3800 3850 3    50   ~ 0
 PSU_COM
 Text Label 4000 3200 1    50   ~ 0
-PSU_12V_5
+PSU_12V
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 60CEAB5B
@@ -267,13 +267,13 @@ POWER_ON_REQUEST
 Text Notes 7600 4950 2    50   ~ 0
 Is it really a problem that I'm tying all these power outputs together? Maybe they should be independent
 Text Label 1000 1200 3    50   ~ 0
-PSU_12V_6
+PSU_12V
 Text Label 4100 3200 1    50   ~ 0
-PSU_5V_4
+PSU_5V
 Text Label 4200 3200 1    50   ~ 0
-PSU_5V_3
+PSU_5V
 Text Label 4300 3200 1    50   ~ 0
-PSU_5V_2
+PSU_5V
 Text Label 4400 3200 1    50   ~ 0
 PSU_5V
 Text Label 7925 4175 0    50   ~ 0
@@ -281,15 +281,15 @@ PSU_5V
 Text Label 7925 4075 0    50   ~ 0
 PSU_5V
 Text Label 7925 3975 0    50   ~ 0
-PSU_5V_2
+PSU_5V
 Text Label 7075 3675 2    50   ~ 0
-PSU_5V_3
+PSU_5V
 Text Label 7075 3475 2    50   ~ 0
-PSU_5V_4
+PSU_5V
 Text Label 3800 3200 1    50   ~ 0
-PSU_12V_6
+PSU_12V
 Text Label 3900 3200 1    50   ~ 0
-PSU_12V_6
+PSU_12V
 $Comp
 L Connector:TestPoint TP3
 U 1 1 60D056FF
