@@ -183,6 +183,7 @@ F 0 "J1" V 1062 1144 50  0000 L CNN
 F 1 "Fan Header" V 1153 1144 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1000 1000 50  0001 C CNN
 F 3 "~" H 1000 1000 50  0001 C CNN
+F 4 "WM19538-ND" V 1000 1000 50  0001 C CNN "DigiKey"
 	1    1000 1000
 	0    1    1    0   
 $EndComp
