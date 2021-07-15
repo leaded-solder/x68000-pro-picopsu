@@ -1231,7 +1231,7 @@
   )
 
   (module OffboardACDC:3x2_4x2 (layer F.Cu) (tedit 60EF9930) (tstamp 60CE53B0)
-    (at 221.234 130.81 180)
+    (at 221.488 130.81 180)
     (path /60D10132)
     (fp_text reference CONV_1 (at -38.1 27.94) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
