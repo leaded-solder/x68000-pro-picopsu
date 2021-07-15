@@ -183,7 +183,7 @@ F 0 "J1" V 1062 1144 50  0000 L CNN
 F 1 "Fan Header" V 1153 1144 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1000 1000 50  0001 C CNN
 F 3 "~" H 1000 1000 50  0001 C CNN
-F 4 "WM19538-ND" V 1000 1000 50  0001 C CNN "DigiKey"
+F 4 "WM19538-ND" V 1000 1000 50  0001 C CNN "DigiKey"
 	1    1000 1000
 	0    1    1    0   
 $EndComp
@@ -314,5 +314,155 @@ F 3 "~" H 3800 1525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3600 1525 3    50   ~ 0
+PSU_COM
+$Comp
+L 74xx:74LS04 U1
+U 2 1 60F00BF1
+P 5525 5175
+F 0 "U1" H 5525 5492 50  0000 C CNN
+F 1 "74LS04" H 5525 5401 50  0000 C CNN
+F 2 "" H 5525 5175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5525 5175 50  0001 C CNN
+	2    5525 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 3 1 60F01EF7
+P 5525 5675
+F 0 "U1" H 5525 5992 50  0000 C CNN
+F 1 "74LS04" H 5525 5901 50  0000 C CNN
+F 2 "" H 5525 5675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5525 5675 50  0001 C CNN
+	3    5525 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 4 1 60F037CF
+P 5525 6175
+F 0 "U1" H 5525 6492 50  0000 C CNN
+F 1 "74LS04" H 5525 6401 50  0000 C CNN
+F 2 "" H 5525 6175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5525 6175 50  0001 C CNN
+	4    5525 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 5 1 60F04B0C
+P 5525 6700
+F 0 "U1" H 5525 7017 50  0000 C CNN
+F 1 "74LS04" H 5525 6926 50  0000 C CNN
+F 2 "" H 5525 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5525 6700 50  0001 C CNN
+	5    5525 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 6 1 60F056E7
+P 5525 7225
+F 0 "U1" H 5525 7542 50  0000 C CNN
+F 1 "74LS04" H 5525 7451 50  0000 C CNN
+F 2 "" H 5525 7225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5525 7225 50  0001 C CNN
+	6    5525 7225
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 7675 0    50   ~ 0
+As per datasheet, "All unused inputs of the [74LS04] \nmust be held at VCC or GND to ensure proper device\noperation."
+$Comp
+L Device:Jumper_NC_Small JP5
+U 1 1 60F13E00
+P 4925 7225
+F 0 "JP5" H 4925 7437 50  0000 C CNN
+F 1 "N/C" H 4925 7346 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4925 7225 50  0001 C CNN
+F 3 "~" H 4925 7225 50  0001 C CNN
+	1    4925 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 7225 4825 7225
+Wire Wire Line
+	5025 7225 5225 7225
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 60F15A8E
+P 4925 6700
+F 0 "JP4" H 4925 6912 50  0000 C CNN
+F 1 "N/C" H 4925 6821 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4925 6700 50  0001 C CNN
+F 3 "~" H 4925 6700 50  0001 C CNN
+	1    4925 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 60F161E9
+P 4925 6175
+F 0 "JP3" H 4925 6387 50  0000 C CNN
+F 1 "N/C" H 4925 6296 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4925 6175 50  0001 C CNN
+F 3 "~" H 4925 6175 50  0001 C CNN
+	1    4925 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 60F166B8
+P 4925 5675
+F 0 "JP2" H 4925 5887 50  0000 C CNN
+F 1 "N/C" H 4925 5796 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4925 5675 50  0001 C CNN
+F 3 "~" H 4925 5675 50  0001 C CNN
+	1    4925 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 60F16AD8
+P 4925 5175
+F 0 "JP1" H 4925 5387 50  0000 C CNN
+F 1 "N/C" H 4925 5296 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4925 5175 50  0001 C CNN
+F 3 "~" H 4925 5175 50  0001 C CNN
+	1    4925 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 5675 5025 5675
+Wire Wire Line
+	5225 5175 5025 5175
+Wire Wire Line
+	5225 6175 5025 6175
+Wire Wire Line
+	5225 6700 5025 6700
+Wire Wire Line
+	4825 5175 4625 5175
+Wire Wire Line
+	4625 5175 4625 5675
+Wire Wire Line
+	4825 6700 4625 6700
+Connection ~ 4625 6700
+Wire Wire Line
+	4625 6700 4625 7225
+Wire Wire Line
+	4825 6175 4625 6175
+Connection ~ 4625 6175
+Wire Wire Line
+	4625 6175 4625 6700
+Wire Wire Line
+	4825 5675 4625 5675
+Connection ~ 4625 5675
+Wire Wire Line
+	4625 5675 4625 6175
+NoConn ~ 5825 7225
+NoConn ~ 5825 6700
+NoConn ~ 5825 6175
+NoConn ~ 5825 5675
+NoConn ~ 5825 5175
+Text Label 4625 7225 2    50   ~ 0
 PSU_COM
 $EndSCHEMATC

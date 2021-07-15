@@ -1,4 +1,0 @@
-- [ ] Measure central mount support hole
-- [ ] Measure overhang of AC/DC units
-- [ ] Construct BOM
-- [ ] Fill empty space with silkscreen
