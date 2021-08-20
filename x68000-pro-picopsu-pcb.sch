@@ -239,27 +239,18 @@ Text Label 9750 4750 2    50   ~ 0
 PSU_5V_STANDBY
 Text Label 10650 3850 0    50   ~ 0
 ~PS_ON
-Wire Wire Line
-	10650 3850 10525 3850
 $Comp
 L Device:R_Small_US R3
 U 1 1 60CF16FD
-P 10525 3600
-F 0 "R3" H 10593 3646 50  0000 L CNN
-F 1 "4.7kΩ" H 10593 3555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 10525 3600 50  0001 C CNN
-F 3 "~" H 10525 3600 50  0001 C CNN
-	1    10525 3600
+P 9100 3275
+F 0 "R3" H 9168 3321 50  0000 L CNN
+F 1 "4.7kΩ" H 9168 3230 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9100 3275 50  0001 C CNN
+F 3 "~" H 9100 3275 50  0001 C CNN
+	1    9100 3275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10525 3700 10525 3850
-Connection ~ 10525 3850
-Wire Wire Line
-	10525 3850 10450 3850
-Wire Wire Line
-	10525 3500 10525 3375
-Text Label 10525 3375 0    50   ~ 0
+Text Label 9100 3000 0    50   ~ 0
 PSU_5V_STANDBY
 Text Label 4400 3850 3    50   ~ 0
 POWER_ON_REQUEST
@@ -301,7 +292,7 @@ F 3 "~" H 10050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9850 3150 9850 3850
+	9850 3150 9850 3550
 $Comp
 L Connector:TestPoint CONV_1
 U 1 1 60D10132
@@ -465,4 +456,15 @@ NoConn ~ 5825 5675
 NoConn ~ 5825 5175
 Text Label 4625 7225 2    50   ~ 0
 PSU_COM
+Wire Wire Line
+	9100 3000 9100 3175
+Wire Wire Line
+	9100 3375 9100 3550
+Wire Wire Line
+	9100 3550 9850 3550
+Connection ~ 9850 3550
+Wire Wire Line
+	9850 3550 9850 3850
+Wire Wire Line
+	10450 3850 10650 3850
 $EndSCHEMATC
