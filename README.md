@@ -8,19 +8,44 @@ The main benefits of this supply versus the original are:
 
 No trademark infringement is intended, and logos are used for informational purposes only.
 
-## Assembly
+## Compatibility
 Before purchasing anything, including the fabrication of this board, first disassemble your PRO and verify your power supply. It should look like this:
 
-TODO: PSU shell picture
+![An X68000 PRO power supply case lying on the floor of my garage.](/x68000-pro-power-supply-on-floor.jpg)
 
-Although it is unclear why or how, it seems like some PRO units in Japan have been converted to use a "Tetris-piece" supply from a tower model, and the wiring harness colours will vary. Additionally, this board will not fit that style of power supply case; use the mattsoft board instead.
+Although it is unclear why or how, it seems like some PRO units in Japan have been converted to use a "Tetris-piece" supply from a tower model, and the wiring harness colours will vary. Additionally, this board will not fit that style of power supply case; [use the mattsoft board instead](https://github.com/mattsoft/X68K_Pico_PSU_v2).
 
-TODO: BOM
+## Bill of Materials
+
+| Component | Source link          | Comments |
+|-----------|----------------------|----------|
+| 12V DC power supply (I used a Meanwell EPS-65S-12) | [Digi-Key 1866-1733-ND](https://www.digikey.ca/en/products/detail/mean-well-usa-inc/EPS-65S-12/7703210) | Accepts a 3"x2" or 4"x2" supply |
+| PicoPSU   | | I used an 80W model, be aware of the power limit (W) of the 12V supply. |
+| A 3-prong electrical cord | | I cut up an Apple MagSafe extension cord for mine |
+| A ring terminal for the ground prong of the cord | | |
+| 74LS04 or 74HCT04 (DIP) | [Digi-Key 
+296-2083-5-ND](https://www.digikey.ca/en/products/detail/texas-instruments/CD74HCT04E/38238) | |
+| 2x 7-pin screw terminals | [Digi-Key 277-1582-ND](https://www.digikey.ca/en/products/detail/phoenix-contact/1935213/568619) | Please use ferrule crimps (see below) |
+| 24-pin ATX connector | [Digi-Key WM3811-ND](https://www.digikey.ca/en/products/detail/molex/0039281243/356033) | 20-pin can also be used |
+| 3-pin fan header | [Digi-Key WM19538-ND](https://www.digikey.ca/en/products/detail/molex/0038006293/3160035) | 2-pin or a regular 0.1" pin header can also be used |
+| 4.7kΩ through-hole resistor | TODO | |
+| 0.1µF through-hole capacitor | TODO | |
+| 4-pin JST VH female connector | [Digi-Key 455-1185-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/VHR-4N/608626) | For connecting the PicoPSU to the Meanwell (see below for notes on tools) |
+| JST SVH-21T-P1.1 crimp terminals | TODO | For building the connector |
+| Vinyl spacers | TODO | For lifting the Meanwell board off the PCB | 
+| M3 screws with nuts | TODO | For fastening the Meanwell board through the vinyl spacers |
+
+Tools-wise, you will likely want a JST VH-specific crimper to crimp these pins. I tried a few times with various universal crimpers and had no luck.
+
+The crimper I successfully used was called [SNA-02BM](https://www.aliexpress.com/item/4000246209070.html) on AliExpress, but be careful as their "all in one" crimper jaw kit does _not_ include the JST VH jaws.
+
+## Assembly Process
 TODO: Actual assembly steps
 
 It is strongly recommended to crimp the computer's wiring harness with ferrules before inserting them into the screw terminals. Doing so will [improve the reliability of a high-current connection](https://www.youtube.com/watch?v=bJk0mzaATI4&ab_channel=efixx), and also reduce the risk of shorting between pins. Ferrule crimpers, complete with ferrule kits, are inexpensive on most online marketplaces.
 
 ## Version History
+ * v0.3: Move pull-up to input side of 74LS04, so that soft power on works.
  * v0.2: Fix AC/DC converter holes. Fix unused 74LS04 gates. Move ATX connector for more "hand room" around it. Remove thermal reliefs for power pours.
  * v0.1: Initial version. AC/DC converter footprint holes did not line up.
 
