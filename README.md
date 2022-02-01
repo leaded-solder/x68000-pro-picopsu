@@ -28,8 +28,8 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 | 12V DC power supply (I used a Meanwell EPS-65S-12) | [Digi-Key 1866-1733-ND](https://www.digikey.ca/en/products/detail/mean-well-usa-inc/EPS-65S-12/7703210) | Accepts a 3"x2" or 4"x2" supply |
 | PicoPSU   | | I used an 80W model, be aware of the power limit (W) of the 12V supply. |
 | A 3-prong electrical cord | | I cut up an Apple MagSafe extension cord for mine |
-| A ring terminal for the ground prong of the cord | TODO | |
-| Rubber strain-relief grommet for the power cord (recommended) | TODO | |
+| A ring terminal for the ground prong of the cord | TODO | Make sure the ring terminal matches the gauge of the earth/ground conductor of the cord. |
+| Rubber strain-relief grommet for the power cord (recommended) | [uxcell 27x9x6mm](https://www.amazon.ca/Uxcell-Rubber-Square-Strain-Protector/dp/B016UFGHUK/) | |
 | 74LS04 or 74HCT04 (DIP) | [Digi-Key 296-2083-5-ND](https://www.digikey.ca/en/products/detail/texas-instruments/CD74HCT04E/38238) | |
 | 2x 7-pin screw terminals | [Digi-Key 277-1582-ND](https://www.digikey.ca/en/products/detail/phoenix-contact/1935213/568619) | Please use ferrule crimps (see below) |
 | 24-pin ATX connector | [Digi-Key WM3811-ND](https://www.digikey.ca/en/products/detail/molex/0039281243/356033) | 20-pin can also be used |
