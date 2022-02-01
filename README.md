@@ -42,6 +42,7 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 | JST SVH-21T-P1.1 crimp terminals | [Digi-Key 455-1133-1-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/SVH-21T-P1-1/527368) | For building the PicoPSU-to-Meanwell connector |
 | Vinyl spacers | TODO | For lifting the Meanwell board off the PCB | 
 | M3 screws with nuts | TODO | For fastening the Meanwell board through the vinyl spacers |
+| Replacement cooling fan (optional) | [Noctua NF-A6x25](https://noctua.at/en/nf-a6x25-pwm) | Can reuse original fan if desired, but mine was gross. |
 
 ## Tools
 You will likely want a JST VH-specific crimper to crimp the pins for the wiring connection from the PicoPSU to the Meanwell 12V supply. I tried a few times with various universal crimpers and had no luck.
