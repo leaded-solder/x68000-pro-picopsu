@@ -34,12 +34,12 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 | 2x 7-pin screw terminals | [Digi-Key 277-1582-ND](https://www.digikey.ca/en/products/detail/phoenix-contact/1935213/568619) | Please use ferrule crimps (see below) |
 | 24-pin ATX connector | [Digi-Key WM3811-ND](https://www.digikey.ca/en/products/detail/molex/0039281243/356033) | 20-pin can also be used |
 | 3-pin fan header | [Digi-Key WM19538-ND](https://www.digikey.ca/en/products/detail/molex/0038006293/3160035) | 2-pin or a regular 0.1" pin header can also be used |
-| 4.7kΩ through-hole resistor | TODO | |
+| 4.7kΩ through-hole resistor | [Digi-Key CF14JT4K70CT-ND](https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/CF14JT4K70/1741428) | Pull-up for soft power logic |
 | 0.1µF through-hole capacitor | TODO | |
-| 2x 100Ω through-hole resistors (optional) | TODO | For troubleshooting LEDs |
+| 2x 100Ω through-hole resistors (optional) | TODO | Current limiters for troubleshooting LEDs |
 | 2x through-hole green LEDs (optional) | TODO | For troubleshooting LEDs |
 | 4-pin JST VH female connector | [Digi-Key 455-1185-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/VHR-4N/608626) | For connecting the PicoPSU to the Meanwell (see below for notes on tools) |
-| JST SVH-21T-P1.1 crimp terminals | TODO | For building the connector |
+| JST SVH-21T-P1.1 crimp terminals | [Digi-Key 455-1133-1-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/SVH-21T-P1-1/527368) | For building the PicoPSU-to-Meanwell connector |
 | Vinyl spacers | TODO | For lifting the Meanwell board off the PCB | 
 | M3 screws with nuts | TODO | For fastening the Meanwell board through the vinyl spacers |
 
