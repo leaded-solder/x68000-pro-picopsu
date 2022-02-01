@@ -38,8 +38,9 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 | 0.1µF through-hole capacitor | TODO | |
 | 2x 100Ω through-hole resistors (optional) | TODO | Current limiters for troubleshooting LEDs |
 | 2x through-hole green LEDs (optional) | TODO | For troubleshooting LEDs |
-| 4-pin JST VH female connector | [Digi-Key 455-1185-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/VHR-4N/608626) | For connecting the PicoPSU to the Meanwell (see below for notes on tools) |
-| JST SVH-21T-P1.1 crimp terminals | [Digi-Key 455-1133-1-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/SVH-21T-P1-1/527368) | For building the PicoPSU-to-Meanwell connector |
+| 4-pin JST VH "VHR-4N" female connector | [Digi-Key 455-1185-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/VHR-4N/608626) | For connecting the PicoPSU to the Meanwell (see below for notes on tools.) Some eBay sellers offer a pre-crimped harness using this connector, but I have not seen any for electrical cords |
+| 3-pin JST VH "VHR-3N" female connector | [Digi-Key 455-1184-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/VHR-3N/608625) | For connecting the wall cord to the Meanwell. |
+| JST SVH-21T-P1.1 crimp terminals | [Digi-Key 455-1133-1-ND](https://www.digikey.ca/en/products/detail/jst-sales-america-inc/SVH-21T-P1-1/527368) | For building the PicoPSU-to-Meanwell connector and wall-to-Meanwell connector |
 | Vinyl spacers | TODO | For lifting the Meanwell board off the PCB | 
 | M3 screws with nuts | TODO | For fastening the Meanwell board through the vinyl spacers |
 | Replacement cooling fan (optional) | [Noctua NF-A6x25](https://noctua.at/en/nf-a6x25-pwm) | Can reuse original fan if desired, but mine was gross. |
@@ -76,7 +77,7 @@ Make sure you preserve the grommet for the original harness, as it helps protect
 
 Unscrew the original supply board and set it aside, just in case. At this point, you may also want to chuck the old fan in the trash and order a Noctua.
 
-The case itself can be cleaned using dish soap and a firm brush.
+The case itself can be cleaned using dish soap and a firm brush. I used a dishwasher for mine, but it didn't do as good of a job without heavy scrubbing.
 
 ### 2. Soldering the new PCB
 This is the most straightforward part. Move in order from the lowest-height to the tallest components. Depending on how much of your original harness is left, it may help to point the opening of the screw terminals both "southward" towards the opening.
