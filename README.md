@@ -27,7 +27,7 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 |-----------|----------------------|----------|
 | 12V DC power supply (I used a Meanwell EPS-65S-12) | [Digi-Key 1866-1733-ND](https://www.digikey.ca/en/products/detail/mean-well-usa-inc/EPS-65S-12/7703210) | Accepts a 3"x2" or 4"x2" supply |
 | PicoPSU   | | I used an 80W model, be aware of the power limit (W) of the 12V supply. |
-| A 3-prong electrical cord | | I cut up an Apple MagSafe extension cord for mine |
+| A 3-prong electrical cord | [Digi-Key AE10689-ND](https://www.digikey.ca/en/products/detail/assmann-wsw-components/AK500-OE-5-0-5/2504531) | I cut up an Apple MagSafe extension cord for mine. |
 | A ring terminal for the ground prong of the cord | TODO | Make sure the ring terminal matches the gauge of the earth/ground conductor of the cord. |
 | Rubber strain-relief grommet for the power cord (recommended) | [uxcell 27x9x6mm](https://www.amazon.ca/Uxcell-Rubber-Square-Strain-Protector/dp/B016UFGHUK/) | |
 | 74LS04 or 74HCT04 (DIP) | [Digi-Key 296-2083-5-ND](https://www.digikey.ca/en/products/detail/texas-instruments/CD74HCT04E/38238) | |
@@ -46,27 +46,30 @@ Although it is unclear why or how, it seems like some PRO units in Japan have be
 | Replacement cooling fan (optional) | [Noctua NF-A6x25](https://noctua.at/en/nf-a6x25-pwm) | Can reuse original fan if desired, but mine was gross. |
 
 ## Tools
+### JST VH crimper
 You will likely want a JST VH-specific crimper to crimp the pins for the wiring connection from the PicoPSU to the Meanwell 12V supply. I tried a few times with various universal crimpers and had no luck.
 
 The crimper I successfully used was called [SNA-02BM](https://www.aliexpress.com/item/4000246209070.html) on AliExpress, but be careful as their "all in one" crimper jaw kit does _not_ include the JST VH jaws.
 
 If you are in a hurry, you can always desolder the wiring harness from the PicoPSU and the connectors from the Meanwell, and then directly solder wires between these two units to pass the +12V to the PicoPSU. Whenever you are removing the wires from the PicoPSU, be careful to keep track of which pin is which on the PicoPSU, as the polarity was not marked on my PicoPSU otherwise.
 
-You can also solder the wall cord directly to the Meanwell, but check your local electrical code about doing this instead of using a crimped connection.
+You will probably still have to crimp the electrical cord, as many electrical standards bodies frown upon soldering it.
 
+### Ferrule crimper
+It is strongly recommended to crimp the computer's wiring harness with ferrules before inserting them into the screw terminals. Doing so will [improve the reliability of a high-current connection](https://www.youtube.com/watch?v=bJk0mzaATI4&ab_channel=efixx), and also reduce the risk of shorting between pins if wire strands splay out while tightening the screw terminals. Ferrule crimpers, complete with ferrule kits, are inexpensive on most online marketplaces – I used the generic red-and-blue one which is sold under dozens of names.
+
+### High-quality JIS screwdriver
 Disassembly of the system will go much better if you have a [JIS screwdriver](https://rtstools.com/jis-vs-phillips-screwdrivers-and-where-to-buy-a-jis-screwdriver/) on hand. JIS is commonly used in Japanese computers, vehicles, and machines, and if you keep camming out and ruining screws, that's probably because you are using a Phillips screwdriver to turn them. JIS screws can be recognized by their cross head and identifying dot. My favourite brand of JIS screwdriver is [Vessel](https://www.vesseltoolsusa.com/product/screwdriver), but Hozan also makes a good driver.
 
-It is strongly recommended to crimp the computer's wiring harness with ferrules before inserting them into the screw terminals. Doing so will [improve the reliability of a high-current connection](https://www.youtube.com/watch?v=bJk0mzaATI4&ab_channel=efixx), and also reduce the risk of shorting between pins. Ferrule crimpers, complete with ferrule kits, are inexpensive on most online marketplaces.
-
+### The Essentials
 In general, you should also have the following tools on hand:
  * A crimper capable of crimping ring terminals (pliers work in a pinch;)
  * Wire strippers;
+ * A heat gun if you are using heat-shrink ring terminals (recommended;)
  * Temperature-controlled soldering iron with appropriate electronics solder (I recommend Kester 63/37)
 
 ## Assembly Process
 Please do not attempt the manufacture of this board if you are unsure or nervous about it.
-
-TODO: Actual assembly steps
 
 ### 1. Disassembly of Old Power Supply
 Once the power supply unit is removed from the computer, unscrew the screws on the outside of the power supply. Keep track of where each one came from.
@@ -106,7 +109,7 @@ It is strongly recommended that you now tie [an underwriter's knot](https://www.
 
 Paying attention to the footprint for your 12V converter, crimp the live and neutral wires for the converter, and crimp a ring terminal onto the ground. On the double-insulated converter which I used, no ground lug is exposed, so the ring terminal had to be bolted directly to the case of the supply.
 
-Unlike the PicoPSU connection, in North America, it is generally frowned upon (and may be against local electrical code) to solder the live and neutral conductors directly to anything.
+Unlike the PicoPSU connection, in North America, it is generally frowned upon (and is usually against local electrical code) to solder the live and neutral conductors directly to anything. A soldered connection is considered less reliable and consistent.
 
 Once this step is complete, you should be able to plug a wall cord into the 12V converter, which is itself plugged into the PicoPSU. Don't plug the electrical cord into the wall yet.
 
