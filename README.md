@@ -1,5 +1,7 @@
 ## Introduction
-This is a replacement power supply board for the Sharp X68000 PRO desktop computer from 1989. It uses a PicoPSU and an off-board 12VDC power supply to provide the power rails, and handles the unique soft-power-on logic of the X68Ks.
+This is a replacement power supply board for the Sharp X68000 PRO (CZ-652C) desktop computer from 1989. It uses a PicoPSU and an off-board 12VDC power supply to provide the power rails, and handles the unique soft-power-on logic of the X68Ks.
+
+Note that this board does NOT support the PRO2 model (CZ-653C)! That model uses a completely different power supply layout, identical to the tower machines. See below.
 
 The main benefits of this supply versus the original are:
  - Brand-new board with modern quality control, undamaged by capacitor leakage or wear-and-tear;
@@ -19,7 +21,9 @@ Before purchasing anything, including the fabrication of this board, first disas
 
 ![An X68000 PRO power supply case lying on the floor of my garage.](/assets/x68000-pro-power-supply-on-floor.jpg)
 
-Although it is unclear why or how, it seems like some PRO units in Japan have been converted to use a "Tetris-piece" supply from a tower model, and the wiring harness colours will vary. Additionally, this board will not fit that style of power supply case; [use the mattsoft board instead](https://github.com/mattsoft/X68K_Pico_PSU_v2).
+PRO2 models have a different power supply, which looks to be identical to the "Tetris-piece" supply of the tower models. This board will not fit that style of power supply case; [use the mattsoft board instead](https://github.com/mattsoft/X68K_Pico_PSU_v2).
+
+Please note that [the wiring colours are _also_ different for PRO2 models and tower models](https://blog.goo.ne.jp/kawalab_net/e/a0a71a56ef128293a3bc617afcea7ec3).
 
 ## Bill of Materials
 
