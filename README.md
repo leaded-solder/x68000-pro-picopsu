@@ -78,7 +78,9 @@ Please do not attempt the manufacture of this board if you are unsure or nervous
 ### 1. Disassembly of Old Power Supply
 Once the power supply unit is removed from the computer, unscrew the screws on the outside of the power supply. Keep track of where each one came from.
 
-Once the old power supply board is exposed, cut the wiring harness as close to the board as possible so that you have lots of wire length to work with. If your old power board is extremely corroded (it probably is) you should check the wiring. Any "greening up" or general crunchiness of the original wire means that it's safer and more reliable for it to be thrown away.
+![The old wiring harness, showing off where everything was soldered into the board.](/assets/old-psu-connections.png)
+
+Once the old power supply board is exposed, cut the wiring harness as close to the board as possible so that you have lots of wire length to work with. If your old power board is extremely corroded (it probably is) you should check the wiring. Any "greening up" or general crunchiness of the original wire means that it's safer and more reliable for it to be thrown away and replaced with new, stranded, copper wire.
 
 Make sure you preserve the grommet for the original harness, as it helps protect the wiring from the sharp edges of the power supply case.
 
@@ -146,7 +148,11 @@ Make sure you unplug the power supply before you move on.
 ### 9. Building and Routing the Main Harness
 Strip back each of the conductors on the original harness. Again, look for "greened up" wires, or especially brittle ones. You can then crimp them with ferrule crimps and install them into the screw terminals.
 
+![Each of the original wiring harness wires are now crimped with ferrule ends, so they can be inserted into the screw terminals.](/assets/ferrule-crimped-harness.png)
+
 If you removed the harness grommet, now is the time to reinstall it. It gets a lot harder to do after this.
+
+![The ferrule ends are installed into the screw terminals.](/assets/harness-installed-into-screw-terminals.png)
 
 Here is the colour guide for _my_ machine: yours may be different, and if it is please let me know so I can update this. It followed the pattern shown on [the NFGGames power-supply rebuild page](https://nfggames.com/nfg/x68repair/).
 
@@ -161,11 +167,13 @@ Here is the colour guide for _my_ machine: yours may be different, and if it is 
 
 At this point, you may also want to substitute one of the original floppy power cables for an additional 4-pin Molex or Berg power cable, which will make powering a hard drive or SCSI2SD easier in the future.
 
-If you are colour-blind, ask someone who isn't to help you identify the wires.
+If you are colour-blind, ask someone who isn't to help you identify the wires. The embarrassment of getting roasted on your local Discord server is a lot cheaper than buying a new motherboard.
 
 You should now be able to plug in the supply, short the "Power On" pin to +5V standby, and watch the supply turn on. The "Power Good" light should illuminate, and you should see appropriate voltages on all of the connectors.
 
 ### 10. Final Assembly
+![The +12VDC supply, PicoPSU, ferrule-crimped harness, and ancillary parts are all installed.](/assets/fully-installed-12v.png)
+
 Here are all the little steps:
 
  1. Put the top back on the case, and screw it down. Pay special attention to make sure it isn't pinching or otherwise cutting into any of the nest of wires running around inside the case.
@@ -196,3 +204,5 @@ Thanks to [mattsoft from the nfggames forum](https://nfggames.com/forum2/index.p
 Thanks to [Tim Maxwell's ATX Breakout project](http://timmaxwell.org/pages/atx-breakout/) for contributing the symbol for the ATX connector.
 
 Thanks to Dave Park for advice on thermal reliefs and reliable usage of the 74LS04.
+
+Thanks to Kanji for test-building one of these and taking good pictures for the assembly instructions.
