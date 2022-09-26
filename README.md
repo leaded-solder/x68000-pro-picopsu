@@ -35,7 +35,7 @@ Please note that [the wiring colours are _also_ different for PRO2 models and to
 | A ring terminal for the ground prong of the cord | TODO | Make sure the ring terminal matches the gauge of the earth/ground conductor of the cord. |
 | Rubber strain-relief grommet for the power cord (recommended) | [uxcell 27x9x6mm](https://www.amazon.ca/Uxcell-Rubber-Square-Strain-Protector/dp/B016UFGHUK/) | |
 | 74LS04 or 74HCT04 (DIP) | [Digi-Key 296-2083-5-ND](https://www.digikey.ca/en/products/detail/texas-instruments/CD74HCT04E/38238) | |
-| 2x 7-pin screw terminals | [Digi-Key 277-1582-ND](https://www.digikey.ca/en/products/detail/phoenix-contact/1935213/568619) | Please use ferrule crimps (see below) |
+| 2x 7-pin screw terminals (5.00mm) | [Digi-Key 277-1582-ND](https://www.digikey.ca/en/products/detail/phoenix-contact/1935213/568619) | Please use ferrule crimps (see below) |
 | 24-pin ATX connector | [Digi-Key WM3811-ND](https://www.digikey.ca/en/products/detail/molex/0039281243/356033) | 20-pin can also be used |
 | 3-pin fan header | [Digi-Key WM19538-ND](https://www.digikey.ca/en/products/detail/molex/0038006293/3160035) | 2-pin or a regular 0.1" pin header can also be used |
 | 4.7kΩ through-hole resistor | [Digi-Key CF14JT4K70CT-ND](https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/CF14JT4K70/1741428) | Pull-up for soft power logic |
