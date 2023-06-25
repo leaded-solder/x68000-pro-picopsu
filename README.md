@@ -1,5 +1,5 @@
 ## Introduction
-This is a replacement power supply board for the Sharp X68000 PRO (CZ-652C) desktop computer from 1989. It uses a PicoPSU and an off-board 12VDC power supply to provide the power rails, and handles the unique soft-power-on logic of the X68Ks.
+This is a replacement power supply board for the Sharp X68000 PRO (CZ-652C) desktop computer from 1989. It uses a PicoPSU and an off-board 12VDC power supply to provide the power rails, and handles the unique soft-power-on logic of the X68Ks. It replaces the power supply known as UADP-0070CEZZ.
 
 Note that this board does NOT support the PRO2 model (CZ-653C)! That model uses a completely different power supply layout, identical to the tower machines. See below.
 
