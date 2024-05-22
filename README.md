@@ -31,7 +31,7 @@ Please note that [the wiring colours are _also_ different for PRO2 models and to
 |-----------|----------------------|----------|
 | 12V DC power supply (I used a Meanwell EPS-65S-12) | [Digi-Key 1866-1733-ND](https://www.digikey.ca/en/products/detail/mean-well-usa-inc/EPS-65S-12/7703210) | Accepts a 3"x2" or 4"x2" supply |
 | PicoPSU   | | I used an 80W model, be aware of the power limit (W) of the 12V supply. |
-| A 3-prong electrical cord | [Digi-Key AE10689-ND](https://www.digikey.ca/en/products/detail/assmann-wsw-components/AK500-OE-5-0-5/2504531) | I cut up an Apple MagSafe extension cord for mine. |
+| A 3-prong electrical cord | [Digi-Key AE10675-ND](https://www.digikey.ca/en/products/detail/assmann-wsw-components/AK500-16-OE-5-1-5/2504516) (1.50m) | I cut up an Apple MagSafe extension cord for mine. |
 | A ring terminal for the ground prong of the cord | TODO | Make sure the ring terminal matches the gauge of the earth/ground conductor of the cord. |
 | Rubber strain-relief grommet for the power cord (recommended) | [uxcell 27x9x6mm](https://www.amazon.ca/Uxcell-Rubber-Square-Strain-Protector/dp/B016UFGHUK/) | |
 | 74LS04 or 74HCT04 (DIP) | [Digi-Key 296-2083-5-ND](https://www.digikey.ca/en/products/detail/texas-instruments/CD74HCT04E/38238) | |
