@@ -55,6 +55,8 @@ You will likely want a JST VH-specific crimper to crimp the pins for the wiring 
 
 The crimper I successfully used was called [SNA-02BM](https://www.aliexpress.com/item/4000246209070.html) on AliExpress, but be careful as their "all in one" crimper jaw kit does _not_ include the JST VH jaws.
 
+Another budget-priced option is the [Engineer PA-21](https://www.nejisaurus.engineer.jp/product-page/pa-21-%E7%B2%BE%E5%AF%86%E5%9C%A7%E7%9D%80%E3%83%9A%E3%83%B3%E3%83%81-1).
+
 If you are in a hurry, you can always desolder the wiring harness from the PicoPSU and the connectors from the Meanwell, and then directly solder wires between these two units to pass the +12V to the PicoPSU. Whenever you are removing the wires from the PicoPSU, be careful to keep track of which pin is which on the PicoPSU, as the polarity was not marked on my PicoPSU otherwise.
 
 You will probably still have to crimp the electrical cord, as many electrical standards bodies frown upon soldering it.
