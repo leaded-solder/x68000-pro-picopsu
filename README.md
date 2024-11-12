@@ -193,6 +193,7 @@ Push the power button on the front of the computer. The power supply should now 
 Congratulations, you have successfully kept the scene alive!
 
 ## Version History
+ * v0.4: Fix 4" footprint, add protection resistor to power-on signal
  * v0.3: Move pull-up to input side of 74LS04, so that soft power on works.
  * v0.2: Fix AC/DC converter holes. Fix unused 74LS04 gates. Move ATX connector for more "hand room" around it. Remove thermal reliefs for power pours.
  * v0.1: Initial version. AC/DC converter footprint holes did not line up.
