@@ -171,7 +171,7 @@ At this point, you may also want to substitute one of the original floppy power 
 
 If you are colour-blind, ask someone who isn't to help you identify the wires. The embarrassment of getting roasted on your local Discord server is a lot cheaper than buying a new motherboard.
 
-You should now be able to plug in the supply, short the "Power On" pin to +5V standby, and watch the supply turn on. The "Power Good" light should illuminate, and you should see appropriate voltages on all of the connectors.
+You should now be able to plug in the supply. Without the rest of the X68000 attached, the supply will turn on as soon as power is applied. The "Power Good" light should illuminate, and you should see appropriate voltages on all of the connectors. If installed, your fan should be running.
 
 ### 10. Final Assembly
 ![The +12VDC supply, PicoPSU, ferrule-crimped harness, and ancillary parts are all installed.](/assets/fully-installed-12v.png)
@@ -209,3 +209,5 @@ Thanks to [Tim Maxwell's ATX Breakout project](http://timmaxwell.org/pages/atx-b
 Thanks to Dave Park for advice on thermal reliefs and reliable usage of the 74LS04.
 
 Thanks to Kanji for test-building one of these and taking good pictures for the assembly instructions.
+
+Thanks to sampson for finding a mistake in the testing instructions.
